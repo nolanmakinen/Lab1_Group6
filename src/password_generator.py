@@ -29,6 +29,14 @@ def generate_password(length, num_letters, num_digits, num_specials):
 
     return ''.join(password_chars)
 
+def write_results_to_file(file_name, password):
+    try:
+        with open(file_name, "w") as file:
+            file.write(f"Generated Password: {password}\n")
+        print(f"Password saved to {file_name}")
+    except Exception as e:
+        print(f"Error saving password to file: {e}")
+
 # Main function
 def main():
     print("\n--- Secure Password Generator ---\n")
@@ -56,6 +64,10 @@ def main():
 
     # Step 4: Display the password
     print("\nYour secure password is:", password)
+
+    # Step 5: Write password to file
+    file_name = "generated_password.txt"
+    write_results_to_file(file_name, password)
 
 # Entry point
 if __name__ == "__main__":
