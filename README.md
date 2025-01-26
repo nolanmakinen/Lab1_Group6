@@ -3,7 +3,7 @@ Nolan Makinen & Princess Okerulu
 ## Purpose of Lab 1
 The purpose of lab 1 was to collaboratively make a Python program that generates secure passwords based on user defined creteria (Length, number of letters, digits & special characters), As well as to validate user inputs.
 
-## How the work was devided
+## How the work was divided
 | Contributor      | Parts Created    |
 |------------------|------------------|
 | Nolan Makinen    | Steps 1, 2 & 5         |
